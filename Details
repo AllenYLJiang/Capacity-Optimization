@@ -1,7 +1,7 @@
-Because the paper is over-length, there are some details in implementation which are not involved in the paper. For instance, in the pascal person part dataset, the 
-LM is used for pre-processing the input images for SM. The basic function of LM is to locate the joints. The predicted skeletons are
-used to describe the gestures of people. We've used the gestures to find the people in training images which have the same or similar
-gestures as those in test images. The images from training data are used to simulate, or generate fake test images which have ground
-truth (because training images have ground truth). In this way, the hard samples from test set can be simulated using training images\
-with labels. LM significantly improves the performance of SM.
-More details will be added later.
+Because the paper is over-length, there are some details in implementation which are not involved in the paper. For instance, in the 
+pascal person part dataset, the LM is used for pre-processing the input images for SM. The basic function of LM is to locate the joints.
+The predicted skeletons are used to describe the gestures of people. We've used the gestures to find the people in training images which 
+have the same or similar gestures as those in test images. The images from training data are used to simulate, or generate fake test 
+images which have ground truth (because training images have ground truth). Both gestures and colors in test data can be simulated with 
+LM and training data. In this way, the hard samples from test set can be simulated using training images with labels. LM significantly 
+improves the performance of SM. More details will be added later.
