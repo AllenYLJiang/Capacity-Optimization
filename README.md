@@ -2,7 +2,7 @@
 
 The implementation is divided into the following steps:
 Step 1 to Step 9 are for a large network. After being fully trained, the large network is used to teach a small network.
-1. Train the large SM to segment out all person parts as one category. This is much simpler than 7 class prediction and the network can roughly segment out all people.
+1. Train a large SM to segment out all person parts as one category. This is much simpler than 7 class prediction and the network can roughly segment out all people.
 2. Also use LM to predict the skeletons of all people.
 3. Based on the results from Step 1 and Step 2, we can roughly segment out the regions containing people and set the backgrounds to zeros. This can reduce the workload of CNNs. 
 4. Enlarge the region if interested regions are too small and re-use LM to generate skeleton on the enlarged regions.
