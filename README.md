@@ -28,5 +28,5 @@ To evaluate the similarity in poses, a feature descriptor is developed in our wo
 Fig. 2 describes the proposed descriptor, two histograms are used to describe the pose of each person. The sum of Euclidean distances between two pairs of histogram vectors evaluates the similarity in pose between two people. We’ve divided one image into regions each of which contains one person. As a result, multiple images from training data can be used to create one fake test image that is similar to a real test image, as is shown in Pair 6 in Fig. 1. 
 Moreover, the existence of other variances, such as rotations, scaling or changes in illumination may reduce the similarity between fake test images and real ones. 
    
-<img width="352" height="512" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig2.jpg"/>
+<img width="512" height="352" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig2.jpg"/>
 Fig. 2. The proposed descriptor for describing poses. (a) The indices of joints. (b) The offsets of different joints from the center. The offsets are normalized with respect to the maximal distance between pairs of joints. The top histogram describes the normalized offsets in the vertical direction while the bottom one describes those in the horizontal direction.
