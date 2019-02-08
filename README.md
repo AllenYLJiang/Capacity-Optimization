@@ -21,7 +21,6 @@ The first way of data augmentation is through creating examples which have simil
 <img width="97" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig1_pair4_left.jpg"/> <img width="97" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig1_pair4_right.jpg"/>
 <img width="161" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig1_pair5_left.jpg"/> <img width="161" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig1_pair5_right.jpg"/>
 <img width="289" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig1_pair6_left.jpg"/> <img width="161" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig1_pair6_right.jpg"/>
-
        
 Fig. 1. Examples showing 6 pairs of images containing people with similar poses. Within each pair, the left image is from test set, the right one is from training set. We’ve searched the training set to find the person with the most similar pose to each person from test images and conducted homography transformations on the selected regions from training data.
 As can be seen from Fig. 1, we’ve generated a fake test set with labels based on training data. We’ve conducted homography transformations to map fake images to real ones based on the coordinates of critical joints. The gap between the fake test set and real test set is surely lower than that between training set and real test set. Experiments will show that the involvement of fake test set during training can improve the performance of segmentation.
@@ -29,5 +28,5 @@ To evaluate the similarity in poses, a feature descriptor is developed in our wo
 Fig. 2 describes the proposed descriptor, two histograms are used to describe the pose of each person. The sum of Euclidean distances between two pairs of histogram vectors evaluates the similarity in pose between two people. We’ve divided one image into regions each of which contains one person. As a result, multiple images from training data can be used to create one fake test image that is similar to a real test image, as is shown in Pair 6 in Fig. 1. 
 Moreover, the existence of other variances, such as rotations, scaling or changes in illumination may reduce the similarity between fake test images and real ones. 
    
-(a)	(b)
+<img width="352" height="512" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig2.jpg"/>
 Fig. 2. The proposed descriptor for describing poses. (a) The indices of joints. (b) The offsets of different joints from the center. The offsets are normalized with respect to the maximal distance between pairs of joints. The top histogram describes the normalized offsets in the vertical direction while the bottom one describes those in the horizontal direction.
