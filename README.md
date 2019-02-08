@@ -30,3 +30,7 @@ Moreover, the existence of other variances, such as rotations, scaling or change
    
 <img width="658" height="453" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig2.jpg"/>
 Fig. 2. The proposed descriptor for describing poses. (a) The indices of joints. (b) The offsets of different joints from the center. The offsets are normalized with respect to the maximal distance between pairs of joints. The top histogram describes the normalized offsets in the vertical direction while the bottom one describes those in the horizontal direction.
+
+Preprocessed images by step 1 to step 3:
+https://drive.google.com/file/d/1qMt_DZLFajB0njsKV1k953cOiZ3tGWty/view?usp=sharing
+https://drive.google.com/file/d/1qatb9nthx8g4y0RDr2QI71uPkbLIv_3W/view?usp=sharing
