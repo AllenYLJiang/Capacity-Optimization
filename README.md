@@ -34,6 +34,16 @@ Fig. 2. The proposed descriptor for describing poses. (a) The indices of joints.
 
 Preprocessed images by step 1 to step 3:
 
-https://drive.google.com/file/d/1qMt_DZLFajB0njsKV1k953cOiZ3tGWty/view?usp=sharing
+https://drive.google.com/file/d/1GbOFQc7XI3DVLUZpM4dFuXq60fE5OnuO/view?usp=sharing
 
-https://drive.google.com/file/d/1qatb9nthx8g4y0RDr2QI71uPkbLIv_3W/view?usp=sharing
+https://drive.google.com/file/d/1UQRvmh9Kr79SpdzgVQdU1HzPXylmkvpA/view?usp=sharing
+
+We've found that PSPNet-101 [1] can outperform our un-compressed SM and if it is trained on the datasets above and the predictions from the pre-trained PSPNet-101 are used to train our simplified SM, the simplified SM can achieve an accuracy of 76.03% which is higher than as claimed in the paper.
+
+segmentation of 1 class in step 1:
+https://drive.google.com/file/d/1Ms0ObVzhwH__Jci05Kv-LBja7oDiTVP_/view?usp=sharing
+
+segmentation of 7 classes in step 10:
+https://drive.google.com/file/d/1x1hGOTMvm1PZyZbUzTcAb1h2_3UG8-6j/view?usp=sharing
+
+[1] Zhao, Hengshuang, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, and Jiaya Jia. "Pyramid scene parsing network." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 2881-2890. 2017.
