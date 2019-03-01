@@ -51,10 +51,9 @@ The model can achieve a test accuracy of over 77% and with it as the teacher, a 
 Test list:
 https://drive.google.com/file/d/10e_QEpc4izy2XWBNsg-U016in2pIq7sJ/view?usp=sharing
 
-We've also tried to dress the people on the training images with the cloth from people in test images. In that way the test images can be better simulated. The ground truth labels from training images can be mapped with the same mapping function. For instance, the left image comes from the training set while the right one from test set.
+We've also tried to dress the people on the training images with the cloth from people in test images. In that way the test images can be better simulated. The ground truth labels from training images can be mapped with the same mapping function. For instance, the left image comes from the training set while the middle one from test set. The right one is the result with ground truth label.
 
-<img width="97" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2008_000176.jpg"/>
-<img width="97" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2009_003290.jpg"/>
+<img width="97" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2008_000176.jpg"/>  <img width="97" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2009_003290.jpg"/>  <img width="97" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/3290_dress_176.jpg"/>
 
  
 [1] Zhao, Hengshuang, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, and Jiaya Jia. "Pyramid scene parsing network." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 2881-2890. 2017.
