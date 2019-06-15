@@ -67,6 +67,12 @@ Additionally, the exchange of background between training images and test ones a
 
 <img width="277" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2008_000109.jpg"/>  <img width="277" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2008_000109_0.jpg"/>  <img width="277" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2008_000109_1.jpg"/>  <img width="277" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2008_000109_2.jpg"/>  <img width="277" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/2008_000109_3.jpg"/> 
  
+The experiments on the LIP is based on a more complex model. This is because the small model cannot perform as well on the large dataset. The pre-trained model:
+https://drive.google.com/file/d/1yDt0EbwfWLJfljVuKsW7RXMZgc4Wt1wd/view?usp=sharing
+https://drive.google.com/file/d/1sPZPKo4ZWMasbrpQMBbWsqkfatl3OLjR/view?usp=sharing
+By using domain randomization the performance cn be further improved. 
+
+
 [1] Zhao, Hengshuang, Jianping Shi, Xiaojuan Qi, Xiaogang Wang, and Jiaya Jia. "Pyramid scene parsing network." In Proceedings of the IEEE conference on computer vision and pattern recognition, pp. 2881-2890. 2017.
 
 [2] Z. H. Zhou, "A brief introduction to weakly supervised learning," National Science Review, vol. 5, no. 1, pp. 44-53, 2017. 
