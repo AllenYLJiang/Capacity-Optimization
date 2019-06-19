@@ -44,6 +44,10 @@ https://drive.google.com/file/d/1GbOFQc7XI3DVLUZpM4dFuXq60fE5OnuO/view?usp=shari
 
 https://drive.google.com/file/d/1UQRvmh9Kr79SpdzgVQdU1HzPXylmkvpA/view?usp=sharing
 
+In step 3, we need to ensure all identities are with similar scale. If the scales of people in some images are large while those in other images are small, the capacity of the model is not enough. The strategy to ensure the consistency of scale is demonstrated in Fig. 3.
+img width="97" height="208" src="https://github.com/AllenYLJiang/Capacity-Optimization/blob/master/imgs/Fig6.png"/>
+Fig. 3. For small-scale identities, we firstly use the detection model which is more robust to scale variances to detect the identities and then enlarge the interested area.
+
 We've found that PSPNet-101 [1] can outperform our un-compressed SM and if it is trained on the datasets above and the predictions from the pre-trained PSPNet-101 are used to train our simplified SM, the simplified SM can achieve an accuracy of 76.03% which is higher than as claimed in the paper.
 As a result, we've trained PSPNet-101 on our pre-processed images (pre-processed by LM shown above) and get the following models:
 
